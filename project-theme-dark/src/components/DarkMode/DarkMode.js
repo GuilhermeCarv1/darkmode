@@ -38,7 +38,7 @@ const DarkMode = () => {
                 type='checkbox'
                 id='darkmode-toggle'
                 onChange={toggleTheme}
-               
+                defaultChecked={localStorage.getItem("selectedTheme") === 'dark'}
             />
             <label className='dark_mode_label' htmlFor='darkmode-toggle'>
                 <Sun />
